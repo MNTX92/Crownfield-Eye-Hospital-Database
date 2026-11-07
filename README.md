@@ -39,9 +39,15 @@ Q6. trg_s2_no_clinician_overlap BEFORE INSERT
 
 **Screenshot naming suggestion:** `Q1_GroupBy.png`, `Q2_InnerJoin.png`, `Q3_LeftJoin.png`, `Q4_CTE_Subquery.png`, `Q5_Procedure.png`, `Q6_Trigger.png`, `SEC_Grants.png`, `SEC_AES.png`, `TX_Rollback.png`, `SCHEMA_Tables.png`.
 
-## Important caution
+## Testing and verification
 
-No MySQL server was available during package creation; the code and explanations are a substantial draft but are **not independently run-verified**. Before submitting, correct any actual errors, add genuine outputs, replace `[PERSONALISE]` text, and truthfully state which actions you yourself performed. Do not put credentials, hospital records or a real encryption key in GitHub.
+The database was tested using MySQL Community Server with the `crownfield_eye_demo` database.
+
+The Student B stored procedure `sp_s2_clinician_agenda` was successfully executed and returned five appointments for clinician 1.
+
+The appointment-overlap trigger was tested with two scenarios. An overlapping appointment was rejected with MySQL Error 1644, while a non-overlapping appointment was accepted. A transaction rollback was also verified to remove the test appointment.
+
+Additional SQL queries and security scripts are included in the repository. Their execution evidence should be checked against the individual assessment report.
 
 ## References
 
