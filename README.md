@@ -1,6 +1,6 @@
 # Student B — individual assessment repository
 
-**Student name:** [INSERT]   **Student ID:** [INSERT]   **Actual contribution:** [DESCRIBE AND VERIFY]
+**Student name:** Mantas Simonelis
 
 This is one **independent** six-feature SQL set built on the shared group schema and synthetic data. The other students have different SELECT queries, procedures and triggers. MySQL execution evidence and your personal reflection are still required.
 
